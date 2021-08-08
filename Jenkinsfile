@@ -5,7 +5,7 @@ pipeline {
         stage ('Checkout') {
           steps {
             git branch: 'master',
-    	    credentialsId: 'gitcreds',
+            credentialsId: 'gitcreds',
             url: 'https://github.com/mdangol/lambdadeploy.git'
           }
         }
@@ -23,4 +23,5 @@ pipeline {
           }
     }
 }
-
+    }
+}
